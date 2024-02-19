@@ -12,6 +12,16 @@
 		987D9F652B83CACD007BE11B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D9F642B83CACD007BE11B /* ViewController.swift */; };
 		987D9F6A2B83CACF007BE11B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 987D9F692B83CACF007BE11B /* Assets.xcassets */; };
 		987D9F6D2B83CACF007BE11B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 987D9F6B2B83CACF007BE11B /* LaunchScreen.storyboard */; };
+		987D9F7D2B83D63A007BE11B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 987D9F7C2B83D63A007BE11B /* Images.xcassets */; };
+		987D9F7F2B83D641007BE11B /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 987D9F7E2B83D641007BE11B /* Icons.xcassets */; };
+		987D9F872B83D70E007BE11B /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D9F862B83D70E007BE11B /* BaseViewModel.swift */; };
+		987D9F892B83D7E9007BE11B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D9F882B83D7E9007BE11B /* BaseViewController.swift */; };
+		987D9F8B2B83D8C8007BE11B /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D9F8A2B83D8C8007BE11B /* MainNavigationController.swift */; };
+		987D9F8D2B83DA16007BE11B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 987D9F8C2B83DA16007BE11B /* Colors.xcassets */; };
+		987D9F8F2B83E41C007BE11B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 987D9F8E2B83E41C007BE11B /* Localizable.strings */; };
+		987D9F922B83F60F007BE11B /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 987D9F912B83F60F007BE11B /* TinyConstraints */; };
+		987D9F942B83F701007BE11B /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D9F932B83F701007BE11B /* UIImage+Extensions.swift */; };
+		987D9F972B83F70F007BE11B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 987D9F962B83F70F007BE11B /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,14 @@
 		987D9F692B83CACF007BE11B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		987D9F6C2B83CACF007BE11B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		987D9F6E2B83CACF007BE11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		987D9F7C2B83D63A007BE11B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		987D9F7E2B83D641007BE11B /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		987D9F862B83D70E007BE11B /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		987D9F882B83D7E9007BE11B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		987D9F8A2B83D8C8007BE11B /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		987D9F8C2B83DA16007BE11B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		987D9F8E2B83E41C007BE11B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		987D9F932B83F701007BE11B /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987D9F972B83F70F007BE11B /* Kingfisher in Frameworks */,
+				987D9F922B83F60F007BE11B /* TinyConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +95,8 @@
 		987D9F752B83CEE0007BE11B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				987D9F852B83D6CD007BE11B /* Base */,
+				987D9F842B83D6C4007BE11B /* Intro */,
 				987D9F642B83CACD007BE11B /* ViewController.swift */,
 			);
 			path = Scenes;
@@ -83,6 +105,9 @@
 		987D9F762B83CF05007BE11B /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				987D9F832B83D662007BE11B /* Extensions */,
+				987D9F822B83D65B007BE11B /* Cell */,
+				987D9F812B83D651007BE11B /* UIView */,
 				987D9F772B83CF15007BE11B /* Resources */,
 			);
 			path = UIComponents;
@@ -91,9 +116,68 @@
 		987D9F772B83CF15007BE11B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				987D9F692B83CACF007BE11B /* Assets.xcassets */,
+				987D9F792B83D605007BE11B /* Assets */,
+				987D9F7A2B83D612007BE11B /* Strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		987D9F792B83D605007BE11B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				987D9F692B83CACF007BE11B /* Assets.xcassets */,
+				987D9F7C2B83D63A007BE11B /* Images.xcassets */,
+				987D9F7E2B83D641007BE11B /* Icons.xcassets */,
+				987D9F8C2B83DA16007BE11B /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		987D9F7A2B83D612007BE11B /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				987D9F8E2B83E41C007BE11B /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		987D9F812B83D651007BE11B /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		987D9F822B83D65B007BE11B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		987D9F832B83D662007BE11B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				987D9F932B83F701007BE11B /* UIImage+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		987D9F842B83D6C4007BE11B /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		987D9F852B83D6CD007BE11B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				987D9F862B83D70E007BE11B /* BaseViewModel.swift */,
+				987D9F882B83D7E9007BE11B /* BaseViewController.swift */,
+				987D9F8A2B83D8C8007BE11B /* MainNavigationController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +196,10 @@
 			dependencies = (
 			);
 			name = PlantClassification;
+			packageProductDependencies = (
+				987D9F912B83F60F007BE11B /* TinyConstraints */,
+				987D9F962B83F70F007BE11B /* Kingfisher */,
+			);
 			productName = PlantClassification;
 			productReference = 987D9F5D2B83CACD007BE11B /* PlantClassification.app */;
 			productType = "com.apple.product-type.application";
@@ -140,6 +228,10 @@
 				Base,
 			);
 			mainGroup = 987D9F542B83CACD007BE11B;
+			packageReferences = (
+				987D9F902B83F60F007BE11B /* XCRemoteSwiftPackageReference "TinyConstraints" */,
+				987D9F952B83F70F007BE11B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 987D9F5E2B83CACD007BE11B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -154,7 +246,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987D9F8D2B83DA16007BE11B /* Colors.xcassets in Resources */,
+				987D9F8F2B83E41C007BE11B /* Localizable.strings in Resources */,
+				987D9F7D2B83D63A007BE11B /* Images.xcassets in Resources */,
 				987D9F6D2B83CACF007BE11B /* LaunchScreen.storyboard in Resources */,
+				987D9F7F2B83D641007BE11B /* Icons.xcassets in Resources */,
 				987D9F6A2B83CACF007BE11B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,7 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987D9F8B2B83D8C8007BE11B /* MainNavigationController.swift in Sources */,
+				987D9F892B83D7E9007BE11B /* BaseViewController.swift in Sources */,
 				987D9F652B83CACD007BE11B /* ViewController.swift in Sources */,
+				987D9F942B83F701007BE11B /* UIImage+Extensions.swift in Sources */,
+				987D9F872B83D70E007BE11B /* BaseViewModel.swift in Sources */,
 				987D9F612B83CACD007BE11B /* AppDelegate.swift in Sources */,
 				987D9F632B83CACD007BE11B /* SceneDelegate.swift in Sources */,
 			);
@@ -383,6 +483,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		987D9F902B83F60F007BE11B /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roberthein/TinyConstraints.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.2;
+			};
+		};
+		987D9F952B83F70F007BE11B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		987D9F912B83F60F007BE11B /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 987D9F902B83F60F007BE11B /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
+		};
+		987D9F962B83F70F007BE11B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 987D9F952B83F70F007BE11B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 987D9F552B83CACD007BE11B /* Project object */;
 }
