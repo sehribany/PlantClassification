@@ -11,26 +11,26 @@ class IntroCell: UICollectionViewCell, ReusableView {
     static var identifier: String = "IntroCell"
     
     private let imageView: UIImageView = {
-        let image = UIImageView()
+        let image         = UIImageView()
         image.contentMode = .scaleAspectFill
         return image
     }()
     
     private let titleLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .appWhiteWrite
+        let label           = UILabel()
+        label.textColor     = .appWhiteWrite
         label.textAlignment = .left
         label.numberOfLines = 3
-        label.font = UIFont(name: "Montserrat", size: 48)
+        label.font          = UIFont.boldSystemFont(ofSize: 52)
         return label
     }()
     
     private let descriptionLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .appWhiteWrite
+        let label           = UILabel()
+        label.textColor     = .appWhiteWrite
         label.textAlignment = .left
         label.numberOfLines = 0
-        label.font = UIFont(name: "Montserrat", size: 16)
+        label.font          = UIFont.systemFont(ofSize: 19)
         return label
     }()
     
@@ -46,9 +46,9 @@ class IntroCell: UICollectionViewCell, ReusableView {
     }
     
     public func set(viewModel: IntroCellProtocol){
-        self.viewModel  = viewModel
-        imageView.image = viewModel.image
-        titleLabel.text = viewModel.titleText
+        self.viewModel        = viewModel
+        imageView.image       = viewModel.image
+        titleLabel.text       = viewModel.titleText
         descriptionLabel.text = viewModel.descriptionText
     }
 }
@@ -68,13 +68,15 @@ extension IntroCell{
     
     private func addTitleLabel(){
         contentView.addSubview(titleLabel)
-        titleLabel.leadingToSuperview().constant = 10
-        titleLabel.topToSuperview().constant = 100
+        titleLabel.leadingToSuperview().constant  = 20
+        titleLabel.trailingToSuperview().constant = -30
+        titleLabel.topToSuperview().constant      = 350
     }
     
     private func addDescriptionLabel(){
         contentView.addSubview(descriptionLabel)
-        descriptionLabel.leadingToSuperview().constant = 100
-        descriptionLabel.topToBottom(of: titleLabel).constant = 10
+        descriptionLabel.leadingToSuperview().constant        = 20
+        descriptionLabel.trailingToSuperview().constant       = -15
+        descriptionLabel.topToBottom(of: titleLabel).constant = 20
     }
 }

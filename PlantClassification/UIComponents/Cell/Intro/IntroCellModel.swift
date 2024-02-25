@@ -23,8 +23,8 @@ final class IntroCellModel: IntroCellProtocol{
     var descriptionText: String
     
     init(image: UIImage, titleText: String, descriptionText: String) {
-        self.image = image
-        self.titleText = titleText
+        self.image           = image
+        self.titleText       = titleText
         self.descriptionText = descriptionText
     }
 }
