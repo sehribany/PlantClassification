@@ -7,10 +7,10 @@
 */
 
 //MARK: - Intro
-"Intro.Next"            = "Next!";
-"Intro.Start"           = "Get Started!";
+"Intro.Next"            = "Next";
+"Intro.Start"           = "Get Started";
 "Intro.firstTitle"      = "Welcome to the World of Plant";
-"Intro.secondTitle"     = "Discover the Diversity of Flora with Our App";
-"Into.thirdTitle"       = "Take the First Step into Information.";
-"Intro.descriptionText" = "Explore the world of plants with our app. Discover diverse flora, learn about their traits, and connect with fellow enthusiasts. Start your botanical adventure today";
+"Intro.secondTitle"     = "Explore Flora Diversity with Our App";
+"Into.thirdTitle"       = "Take the First Step into Information";
+"Intro.descriptionText" = "Discover the world of plants with our application. Discover the vegetation, learn its features. Start your botanical adventure today";
 
