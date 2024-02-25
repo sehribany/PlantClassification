@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLANT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSS-77-dG4">
-                                <rect key="frame" x="63" y="321" width="197" height="84"/>
+                                <rect key="frame" x="55" y="331" width="197" height="84"/>
                                 <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="60"/>
                                 <color key="textColor" name="appWhite"/>
                                 <nil key="highlightedColor"/>
@@ -33,10 +33,10 @@
                         <color key="backgroundColor" name="appSplashGreen"/>
                         <constraints>
                             <constraint firstItem="20E-PV-fnl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="421-ud-7xG"/>
-                            <constraint firstItem="qSS-77-dG4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="9Mr-EA-zeD"/>
+                            <constraint firstItem="qSS-77-dG4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="9Mr-EA-zeD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qSS-77-dG4" secondAttribute="trailing" symbolic="YES" id="ckE-uY-41W"/>
                             <constraint firstItem="20E-PV-fnl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="325" id="kcu-QH-OD9"/>
-                            <constraint firstItem="qSS-77-dG4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="262" id="xZM-IE-deX"/>
+                            <constraint firstItem="qSS-77-dG4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="272" id="xZM-IE-deX"/>
                         </constraints>
                     </view>
                 </viewController>
