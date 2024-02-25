@@ -13,16 +13,19 @@ final class IntroViewController: BaseViewController<IntroViewModel> {
         let pageControl = UIPageControl()
         pageControl.tintColor = .blue
         pageControl.pageIndicatorTintColor = .appWhite
-        pageControl.currentPageIndicatorTintColor = .appSplashGreen
+        pageControl.currentPageIndicatorTintColor = .gray.withAlphaComponent(0.5)
         pageControl.numberOfPages = 3
+        pageControl.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
         return pageControl
     }()
     
     private var nextButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.backgroundColor = .red
+        let button       = UIButton(type: .system)
+        button.tintColor = .appWhiteWrite
+        button.titleLabel?.font  = UIFont.boldSystemFont(ofSize: 25)
+        button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
+        button.layer.cornerRadius = 14
         return button
-        
     }()
     
     private var collectionView: UICollectionView = {
@@ -42,40 +45,37 @@ final class IntroViewController: BaseViewController<IntroViewModel> {
         contentConfigure()
     }
 }
-//MARK: UILayout
+
+//MARK: - UILayout
 extension IntroViewController{
-    private func addSubView(){
+
+    private func addSubView() {
+        addCollectionView()
         addPageControl()
         addNextButton()
-        addCollectionView()
     }
-    
-    private func addPageControl(){
+        
+    private func addPageControl() {
         view.addSubview(pageControl)
-        pageControl.leadingToSuperview().constant = 10
-        pageControl.bottom(to: view, offset: -70)
+        pageControl.leadingToSuperview()
+        pageControl.bottomToSuperview().constant = -80
     }
-    
-    private func addNextButton(){
+        
+    private func addNextButton() {
         view.addSubview(nextButton)
-        nextButton.bottomToSuperview().constant = -70
-        nextButton.trailingToSuperview().constant = -10
+        nextButton.trailingToSuperview().constant = -35
+        nextButton.bottomToSuperview().constant   = -70
     }
-    
-    private func addCollectionView(){
+        
+    private func addCollectionView() {
         view.addSubview(collectionView)
-        collectionView.edgesToSuperview(excluding: .bottom)
-        collectionView.bottomToSuperview().constant = -85
-        //collectionView.trailingToSuperview()
-        //collectionView.leadingToSuperview()
-        //ollectionView.
-
+        collectionView.edgesToSuperview()
     }
 }
 //MARK: -Configuration
 extension IntroViewController{
     private func contentConfigure(){
-        view.backgroundColor = .magenta
+        view.backgroundColor    = .magenta
         collectionView.delegate = self
         collectionView.dataSource = self
         pageControl.isUserInteractionEnabled = false
@@ -122,8 +122,11 @@ extension IntroViewController: UICollectionViewDelegateFlowLayout{
         pageControl.currentPage = Int(scrollView.contentOffset.x / witdh)
         if pageControl.currentPage == viewModel.numberOfItemsAt(section: 0) - 1 {
             nextButton.setTitle(localizedString("Intro.Start"), for: .normal)
+            nextButton.backgroundColor = .gray.withAlphaComponent(0.5)
+            
         } else {
             nextButton.setTitle(localizedString("Intro.Next"), for: .normal)
+            nextButton.backgroundColor = .clear
         }
     }
 }
