@@ -2,7 +2,6 @@
 
 ## Concepts & Technologies Used
 - Swift
-- SPM
 
 ## Libraries
 - KingFisher
