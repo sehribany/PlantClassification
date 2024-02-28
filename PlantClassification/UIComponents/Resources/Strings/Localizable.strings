@@ -14,3 +14,19 @@
 "Into.thirdTitle"       = "Take the First Step into Information";
 "Intro.descriptionText" = "Discover the world of plants with our application. Discover the vegetation, learn its features. Start your botanical adventure today";
 
+//MARK: - Login
+"Login.welcome"          = "Welcome";
+"Login.description"      = "You are one step away from joining a fantastic community.";
+"Login.email"            = "Email";
+"Login.password"         = "Password";
+"Login.emailplace"       = "Enter your email";
+"Login.passwordplace"    = "Enter your password";
+"Login.login"            = "Login";
+"Login.toRegister"       = "Dont't have an account ?";
+
+//MARK: - Register
+"Register.email"            = "Email";
+"Register.password"         = "Password";
+"Register.emailplace"       = "Enter your email";
+"Register.passwordplace"    = "Enter a strong password";
+"Register.register"         = "Register";
