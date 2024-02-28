@@ -23,9 +23,7 @@ class BaseViewController<V: BaseViewProtocol>: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
     }
-    
 }
 
 // MARK: - NavigationBar Logo

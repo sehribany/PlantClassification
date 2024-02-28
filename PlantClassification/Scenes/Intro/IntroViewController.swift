@@ -123,7 +123,6 @@ extension IntroViewController: UICollectionViewDelegateFlowLayout{
         if pageControl.currentPage == viewModel.numberOfItemsAt(section: 0) - 1 {
             nextButton.setTitle(localizedString("Intro.Start"), for: .normal)
             nextButton.backgroundColor = .gray.withAlphaComponent(0.5)
-            
         } else {
             nextButton.setTitle(localizedString("Intro.Next"), for: .normal)
             nextButton.backgroundColor = .clear

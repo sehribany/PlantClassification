@@ -18,11 +18,9 @@ protocol BaseViewEventSource: AnyObject {
 protocol BaseViewProtocol: BaseViewDataSource, BaseViewEventSource {}
 
 class BaseViewModel: BaseViewProtocol {
-    
     var showActivityIndicatorView: (() -> Void)?
     var hideActivityIndicatorView: (() -> Void)?
     var showLoading              : (() -> Void)?
     var hideLoading              : (() -> Void)?
     var showWarningToast         : ((String) -> Void)?
-    
 }

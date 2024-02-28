@@ -40,5 +40,4 @@ class MainNavigationController: UINavigationController {
         
         navigationBar.backItem?.backBarButtonItem?.setTitlePositionAdjustment(.init(horizontal: 0, vertical: -13), for: .default)
     }
-
 }
