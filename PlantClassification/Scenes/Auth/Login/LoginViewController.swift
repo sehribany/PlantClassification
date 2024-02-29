@@ -15,11 +15,6 @@ class LoginViewController: BaseViewController<LoginViewModel> {
         return imageView
     }()
     
-    private let uiview : UIView = {
-        let view = LoginView()
-        return view
-    }()
-    
     private let welcomeLabel: UILabel = {
         let label           = UILabel()
         label.textColor     = .appWhiteWrite
@@ -40,8 +35,15 @@ class LoginViewController: BaseViewController<LoginViewModel> {
         return label
     }()
     
+    private let uiview: UIView = {
+        let view = LoginView()
+        view.toRegisterButton.addTarget(self, action: #selector(toRegister), for: .touchUpInside)
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
         self.addSubView()
     }
 }
@@ -79,3 +81,10 @@ extension LoginViewController{
     }
 }
 
+//MARK: -Actions
+extension LoginViewController{
+    @objc
+    private func toRegister(){
+        navigationController?.pushViewController(RegisterViewController(viewModel: RegisterViewModel()), animated: true)
+    }
+}
