@@ -23,6 +23,8 @@
 "Login.passwordplace"    = "Enter your password";
 "Login.login"            = "Login";
 "Login.toRegister"       = "Dont't have an account ?";
+"Login.or"               = "Or login with";
+"Login.google"           = "Google";
 
 //MARK: - Register
 "Register.email"            = "Email";
@@ -30,3 +32,5 @@
 "Register.emailplace"       = "Enter your email";
 "Register.passwordplace"    = "Enter a strong password";
 "Register.register"         = "Register";
+"Register.toLogin"          = "I have an account ?";
+

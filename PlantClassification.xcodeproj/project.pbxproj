@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98331EB12B90D449002D430F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98331EB02B90D449002D430F /* RegisterView.swift */; };
 		985DD9372B8FB51900559CE8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 985DD9362B8FB51900559CE8 /* FirebaseAnalytics */; };
 		985DD9392B8FB51900559CE8 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 985DD9382B8FB51900559CE8 /* FirebaseAnalyticsOnDeviceConversion */; };
 		985DD93B2B8FB51900559CE8 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 985DD93A2B8FB51900559CE8 /* FirebaseAnalyticsSwift */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		98331EB02B90D449002D430F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		985DD9452B8FBA5400559CE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		985DD9472B8FBA7200559CE8 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		985DD9492B8FBA8200559CE8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98331EAF2B90D3DE002D430F /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				98331EB02B90D449002D430F /* RegisterView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		985DD9402B8FB8B100559CE8 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +240,7 @@
 		987D9F812B83D651007BE11B /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				98331EAF2B90D3DE002D430F /* Register */,
 				985DD94B2B8FBF5400559CE8 /* Login */,
 			);
 			path = UIView;
@@ -369,6 +380,7 @@
 				986968E42B8666B600831E42 /* ReusableView.swift in Sources */,
 				987D9F892B83D7E9007BE11B /* BaseViewController.swift in Sources */,
 				987D9F942B83F701007BE11B /* UIImage+Extensions.swift in Sources */,
+				98331EB12B90D449002D430F /* RegisterView.swift in Sources */,
 				985DD9482B8FBA7200559CE8 /* RegisterViewModel.swift in Sources */,
 				985DD9512B8FC54B00559CE8 /* LoginViewModel.swift in Sources */,
 				985DD94A2B8FBA8200559CE8 /* RegisterViewController.swift in Sources */,
