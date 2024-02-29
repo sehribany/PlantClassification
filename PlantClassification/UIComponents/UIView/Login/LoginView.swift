@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginView: UIView {
+public class LoginView: UIView {
     
     private let emailLabel: UILabel = {
         let label  = UILabel()
@@ -28,12 +28,12 @@ class LoginView: UIView {
         text.attributedPlaceholder = NSAttributedString(string:localizedString("Login.emailplace"),attributes: attributes )
         text.layer.cornerRadius = 9
         text.keyboardType = .emailAddress
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 20))
+        let imageContentView = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: 60))
         let imageView = UIImageView(image: UIImage(named: "icEmail"))
         imageView.contentMode = .scaleAspectFit
-        imageView.frame = CGRect(x: 10, y: 0, width: 24, height: 24)
-        paddingView.addSubview(imageView)
-        text.leftView = paddingView
+        imageView.frame = CGRect(x: 10, y: 18, width: 24, height: 24)
+        imageContentView.addSubview(imageView)
+        text.leftView = imageContentView
         text.leftViewMode = .always
         return text
     }()
@@ -57,11 +57,12 @@ class LoginView: UIView {
         text.attributedPlaceholder = NSAttributedString(string:localizedString("Login.passwordplace"),attributes: attributes )
         text.layer.cornerRadius = 9
         text.isSecureTextEntry = true
-    
+        let imageContentView = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: 60))
         let imageView = UIImageView(image: UIImage(named: "icPassword"))
         imageView.contentMode = .scaleAspectFit
-        imageView.frame = CGRect(x: 0, y: 0, width: 24, height: 24)
-        text.leftView = imageView
+        imageView.frame = CGRect(x: 10, y: 18, width: 24, height: 24)
+        imageContentView.addSubview(imageView)
+        text.leftView = imageContentView
         text.leftViewMode = .always
         return text
     }()
@@ -76,6 +77,31 @@ class LoginView: UIView {
         return button
     }()
     
+    private let orLabel: UILabel = {
+        let label = UILabel()
+        label.text = localizedString("Login.or")
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.textColor = .appGray
+        return label
+    }()
+    
+    private let googleButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.backgroundColor = .appWhiteWrite
+        button.setTitle(localizedString("Login.google"), for: .normal)
+        button.tintColor = .appGray
+        button.layer.cornerRadius = 9
+        button.layer.borderWidth  = 0.5
+        button.layer.borderColor = UIColor.appSplashGreen.cgColor
+        button.titleLabel?.font  = UIFont.systemFont(ofSize: 23)
+        let image = UIImage(named: "icGoogle")
+        let imageView = UIImageView(image: image)
+        imageView.contentMode = .scaleAspectFit
+        imageView.frame = CGRect(x: 80 , y: 14 , width: 23, height: 22)
+        button.addSubview(imageView)
+        return button
+    }()
+    
     private let toRegisterLabel: UILabel = {
         let label  = UILabel()
         label.text = localizedString("Login.toRegister")
@@ -84,7 +110,7 @@ class LoginView: UIView {
         return label
     }()
     
-    private let toRegisterButton: UIButton = {
+     public let toRegisterButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .clear
         button.setTitle(localizedString("Register.register"), for: .normal)
@@ -96,24 +122,27 @@ class LoginView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubView()
-        backgroundColor = UIColor.appWhiteWrite
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
 
 //MARK: -UILayout
 extension LoginView{
     private func addSubView(){
+        backgroundColor = UIColor.appWhiteWrite
         addEmail()
         addEmailText()
         addPassword()
         addPasswordText()
         addtoRegister()
         addLoginButton()
+        addorLabel()
+        addGoogleButton()
+        setupKeyboardLayout()
+        addTapGestureToDismissKeyboard()
     }
     
     private func addEmail(){
@@ -150,8 +179,22 @@ extension LoginView{
         addSubview(loginButton)
         loginButton.leadingToSuperview().constant = 25
         loginButton.trailingToSuperview().constant = -25
-        loginButton.bottomToTop(of: toRegisterLabel).constant = -20
-        loginButton.height(60)
+        loginButton.topToBottom(of: passwordText).constant = 30
+        loginButton.height(50)
+    }
+    
+    private func addorLabel(){
+        addSubview(orLabel)
+        orLabel.centerXToSuperview()
+        orLabel.topToBottom(of: loginButton).constant = 25
+    }
+    
+    private func addGoogleButton(){
+        addSubview(googleButton)
+        googleButton.leadingToSuperview().constant  = 25
+        googleButton.trailingToSuperview().constant = -25
+        googleButton.topToBottom(of: orLabel).constant = 25
+        googleButton.height(50)
     }
     
     private func addtoRegister(){
@@ -161,6 +204,36 @@ extension LoginView{
         toRegisterLabel.leadingToSuperview().constant = 85
         toRegisterButton.leadingToTrailing(of: toRegisterLabel).constant = 5
         toRegisterButton.bottomToSuperview().constant = -64
+    }
+    private func setupKeyboardLayout(){
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow),
+                                               name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide),
+                                               name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+}
+
+//MARK: -Keyboeard
+extension LoginView{
+    private func addTapGestureToDismissKeyboard() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        self.addGestureRecognizer(tapGesture)
+        tapGesture.cancelsTouchesInView = false
+    }
+    
+    @objc private func dismissKeyboard(){
+        self.endEditing(true)
+    }
+    
+    @objc private func keyboardWillShow(notification: NSNotification) {
+        if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue{
+            let keyboardHeight = keyboardFrame.cgRectValue.height
+            let bottomSpace = frame.height - (loginButton.frame.origin.y + loginButton.frame.height)
+            frame.origin.y -= keyboardHeight - bottomSpace + 15
+        }
+    }
         
+    @objc private func keyboardWillHide(notification: NSNotification) {
+        frame.origin.y = 200
     }
 }
