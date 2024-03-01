@@ -2,14 +2,17 @@
 
 ## Concepts & Technologies Used
 - Swift
+- MVVM
 
 ## Libraries
 - KingFisher
 - TinyConstraints
+- FireBase
 
 ## Screenshots
 
 https://github.com/sehribany/PlantClassification/assets/65239293/60509a94-b8a6-434a-8b2f-53ed9db1fdf4
 
-![Uploading Simulator Screenshot - iPhone13 - 2024-02-29 at 20.22.37.png…]()
-![Simulator Screenshot - iPhone13 - 2024-02-29 at 20 22 54](https://github.com/sehribany/PlantClassification/assets/65239293/adeb2f49-eb46-428b-bfd6-dab18de6f7fe)
+<img width="320" alt="1" src="https://github.com/sehribany/PlantClassification/assets/65239293/5a712399-9756-4252-9559-27fa77a98353"> 
+<img width="320" alt="1" src="https://github.com/sehribany/PlantClassification/assets/65239293/1ac5f5cf-a185-45a9-8a17-b70a881cc02c"> 
+
