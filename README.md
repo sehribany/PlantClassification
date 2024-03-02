@@ -3,6 +3,7 @@
 ## Concepts & Technologies Used
 - Swift
 - MVVM
+- SPM
 
 ## Libraries
 - KingFisher
