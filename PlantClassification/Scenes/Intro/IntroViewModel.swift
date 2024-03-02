@@ -36,8 +36,4 @@ final class IntroViewModel: BaseViewModel, IntroViewProtocol{
     func cellItemAt(indexPath: IndexPath) -> IntroCellProtocol {
         cellItems[indexPath.row]
     }
-    
-    func finishedIntro(){
-        
-    }
 }
