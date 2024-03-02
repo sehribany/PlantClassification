@@ -67,6 +67,21 @@ class RegisterView: UIView {
         return text
     }()
     
+    private let userSwitch: UISwitch = {
+        let userSwitch = UISwitch()
+        userSwitch.onTintColor = .appSplashGreen
+        return userSwitch
+    }()
+    
+    private let privacyLabel: UILabel = {
+        let label = UILabel()
+        label.text = localizedString("Register.privacy")
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.textColor = .appGray
+        label.numberOfLines = 0
+        return label
+    }()
+    
     private let registerButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .appSplashGreen
@@ -80,7 +95,7 @@ class RegisterView: UIView {
     private let toRegisterLabel: UILabel = {
         let label  = UILabel()
         label.text = localizedString("Login.toRegister")
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.font = UIFont.systemFont(ofSize: 13)
         label.textColor = .appGray
         return label
     }()
@@ -112,8 +127,9 @@ extension RegisterView{
         addEmailText()
         addPassword()
         addPasswordText()
+        addSwitchandPrivacy()
         addtoRegister()
-        addLoginButton()
+        addRegisterButton()
         addTapGestureToDismissKeyboard()
     }
     
@@ -147,11 +163,21 @@ extension RegisterView{
         passwordText.height(60)
     }
     
-    private func addLoginButton(){
+    private func addSwitchandPrivacy(){
+        addSubview(userSwitch)
+        addSubview(privacyLabel)
+        userSwitch.topToBottom(of: passwordText).constant = 15
+        userSwitch.leadingToSuperview().constant = 25
+        privacyLabel.leadingToTrailing(of: userSwitch).constant = 9
+        privacyLabel.trailingToSuperview().constant = -25
+        privacyLabel.topToBottom(of: passwordText).constant = 21
+    }
+    
+    private func addRegisterButton(){
         addSubview(registerButton)
         registerButton.leadingToSuperview().constant = 25
         registerButton.trailingToSuperview().constant = -25
-        registerButton.topToBottom(of: passwordText).constant = 30
+        registerButton.topToBottom(of: userSwitch).constant = 40
         registerButton.height(50)
     }
 
@@ -163,7 +189,6 @@ extension RegisterView{
         toLoginButton.leadingToTrailing(of: toRegisterLabel).constant = 5
         toLoginButton.bottomToSuperview().constant = -64
     }
-
 }
 //MARK: -Keyboard
 extension RegisterView{

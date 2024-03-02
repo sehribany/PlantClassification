@@ -33,4 +33,5 @@
 "Register.passwordplace"    = "Enter a strong password";
 "Register.register"         = "Register";
 "Register.toLogin"          = "I have an account ?";
+"Register.privacy"          = "I have read and accept the Terms of use";
 
