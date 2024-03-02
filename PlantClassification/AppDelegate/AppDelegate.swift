@@ -17,14 +17,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Thread.sleep(forTimeInterval: 3)
         FirebaseApp.configure()
         window = UIWindow(frame: UIScreen.main.bounds)
-        let mainNavigationController = MainNavigationController()
-        let viewController = LoginViewController(viewModel: LoginViewModel())
-        mainNavigationController.pushViewController(viewController, animated: false)
         
-        window?.rootViewController = mainNavigationController
+        let mainNavigationController = MainNavigationController()
+        var initialViewController: UIViewController
+        
+        if UserDefaults.standard.bool(forKey: "HasOpenedBefore") {
+            initialViewController = LoginViewController(viewModel: LoginViewModel())
+            mainNavigationController.pushViewController(initialViewController, animated: false)
+            window?.rootViewController = mainNavigationController
+        } else {
+            initialViewController = IntroViewController(viewModel: IntroViewModel())
+            window?.rootViewController = initialViewController
+            UserDefaults.standard.set(true, forKey: "HasOpenedBefore")
+        }
         window?.makeKeyAndVisible()
-            
         return true
     }
 }
-
