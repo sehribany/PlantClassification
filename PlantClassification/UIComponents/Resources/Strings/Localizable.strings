@@ -35,3 +35,14 @@
 "Register.toLogin"          = "I have an account ?";
 "Register.privacy"          = "I have read and accept the Terms of use";
 
+//MARK: -Alert
+"Alert.error"                = "Error";
+"Alert.ok"                   = "OK";
+"Alert.success"              = "Success";
+"Alert.successTitle"         = "User registered successfully!";
+"Alert.nillText"             = "Email or password is empty";
+"Alert.errorTitleR"          = "Registration failed";
+"Alert.errorTitleL"          = "Login failed";
+"Alert.alert"                = "Alert";
+"Alert.errorgoogle"          = "Could not get google login result.";
+"Alert.switch"               = "Accept the terms of use.";
