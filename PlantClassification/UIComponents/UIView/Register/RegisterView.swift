@@ -17,7 +17,7 @@ class RegisterView: UIView {
         return label
     }()
         
-    private let emailText : UITextField = {
+    public var emailText : UITextField = {
         let text = UITextField()
         text.backgroundColor = .appGreenLight
         text.textColor = .appGray
@@ -46,7 +46,7 @@ class RegisterView: UIView {
         return label
     }()
         
-    private let passwordText : UITextField = {
+    public let passwordText : UITextField = {
         let text = UITextField()
         text.backgroundColor = .appGreenLight
         text.textColor = .appGray
@@ -67,13 +67,13 @@ class RegisterView: UIView {
         return text
     }()
     
-    private let userSwitch: UISwitch = {
+    public let userSwitch: UISwitch = {
         let userSwitch = UISwitch()
         userSwitch.onTintColor = .appSplashGreen
         return userSwitch
     }()
     
-    private let privacyLabel: UILabel = {
+    public let privacyLabel: UILabel = {
         let label = UILabel()
         label.text = localizedString("Register.privacy")
         label.font = UIFont.systemFont(ofSize: 14)
@@ -82,7 +82,7 @@ class RegisterView: UIView {
         return label
     }()
     
-    private let registerButton: UIButton = {
+    public let registerButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .appSplashGreen
         button.setTitle(localizedString("Register.register"), for: .normal)
