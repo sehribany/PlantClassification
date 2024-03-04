@@ -16,8 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         Thread.sleep(forTimeInterval: 3)
         FirebaseApp.configure()
-        window = UIWindow(frame: UIScreen.main.bounds)
-        
+        window = UIWindow(frame: UIScreen.main.bounds) 
         let mainNavigationController = MainNavigationController()
         var initialViewController: UIViewController
         
