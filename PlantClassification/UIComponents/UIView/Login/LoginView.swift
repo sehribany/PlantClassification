@@ -17,7 +17,7 @@ public class LoginView: UIView {
         return label
     }()
         
-    private let emailText : UITextField = {
+    public let emailText : UITextField = {
         let text = UITextField()
         text.backgroundColor = .appGreenLight
         text.textColor = .appGray
@@ -46,7 +46,7 @@ public class LoginView: UIView {
         return label
     }()
         
-    private let passwordText : UITextField = {
+    public let passwordText : UITextField = {
         let text = UITextField()
         text.backgroundColor = .appGreenLight
         text.textColor = .appGray
@@ -67,7 +67,7 @@ public class LoginView: UIView {
         return text
     }()
     
-    private let loginButton: UIButton = {
+    public let loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .appSplashGreen
         button.setTitle(localizedString("Login.login"), for: .normal)
@@ -85,7 +85,7 @@ public class LoginView: UIView {
         return label
     }()
     
-    private let googleButton: UIButton = {
+    public let googleButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .appWhiteWrite
         button.setTitle(localizedString("Login.google"), for: .normal)
