@@ -32,7 +32,13 @@
 		987D9F922B83F60F007BE11B /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 987D9F912B83F60F007BE11B /* TinyConstraints */; };
 		987D9F942B83F701007BE11B /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D9F932B83F701007BE11B /* UIImage+Extensions.swift */; };
 		987D9F972B83F70F007BE11B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 987D9F962B83F70F007BE11B /* Kingfisher */; };
-		988580B72B9659DC0018B6FE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988580B62B9659DC0018B6FE /* MainViewController.swift */; };
+		987EA3542B97A0F8001D3055 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987EA3532B97A0F8001D3055 /* MainTabBarController.swift */; };
+		987EA3572B97A494001D3055 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987EA3562B97A494001D3055 /* ReminderViewController.swift */; };
+		987EA3592B97A4A1001D3055 /* ReminderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987EA3582B97A4A1001D3055 /* ReminderViewModel.swift */; };
+		987EA35C2B97A9AC001D3055 /* IdentificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987EA35B2B97A9AC001D3055 /* IdentificationViewModel.swift */; };
+		987EA35E2B97A9E8001D3055 /* IdentificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987EA35D2B97A9E8001D3055 /* IdentificationViewController.swift */; };
+		987EA3612B97AA2C001D3055 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987EA3602B97AA2C001D3055 /* HomeViewModel.swift */; };
+		987EA3632B97AA33001D3055 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987EA3622B97AA33001D3055 /* HomeViewController.swift */; };
 		988580B92B965D550018B6FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 988580B82B965D550018B6FE /* GoogleService-Info.plist */; };
 		988580BC2B965E160018B6FE /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 988580BB2B965E160018B6FE /* FirebaseAnalytics */; };
 		988580BE2B965E160018B6FE /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 988580BD2B965E160018B6FE /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -92,7 +98,13 @@
 		987D9F8C2B83DA16007BE11B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		987D9F8E2B83E41C007BE11B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		987D9F932B83F701007BE11B /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
-		988580B62B9659DC0018B6FE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		987EA3532B97A0F8001D3055 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		987EA3562B97A494001D3055 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		987EA3582B97A4A1001D3055 /* ReminderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewModel.swift; sourceTree = "<group>"; };
+		987EA35B2B97A9AC001D3055 /* IdentificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentificationViewModel.swift; sourceTree = "<group>"; };
+		987EA35D2B97A9E8001D3055 /* IdentificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentificationViewController.swift; sourceTree = "<group>"; };
+		987EA3602B97AA2C001D3055 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		987EA3622B97AA33001D3055 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		988580B82B965D550018B6FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		98D34E602B964DFF00ACCBA6 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -244,6 +256,9 @@
 				987D9F842B83D6C4007BE11B /* Intro */,
 				985DD9402B8FB8B100559CE8 /* Auth */,
 				988580B52B9659CA0018B6FE /* Main */,
+				987EA3552B97A472001D3055 /* Reminder */,
+				987EA35A2B97A981001D3055 /* Identification */,
+				987EA35F2B97AA1C001D3055 /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -333,10 +348,37 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		987EA3552B97A472001D3055 /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				987EA3582B97A4A1001D3055 /* ReminderViewModel.swift */,
+				987EA3562B97A494001D3055 /* ReminderViewController.swift */,
+			);
+			path = Reminder;
+			sourceTree = "<group>";
+		};
+		987EA35A2B97A981001D3055 /* Identification */ = {
+			isa = PBXGroup;
+			children = (
+				987EA35B2B97A9AC001D3055 /* IdentificationViewModel.swift */,
+				987EA35D2B97A9E8001D3055 /* IdentificationViewController.swift */,
+			);
+			path = Identification;
+			sourceTree = "<group>";
+		};
+		987EA35F2B97AA1C001D3055 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				987EA3602B97AA2C001D3055 /* HomeViewModel.swift */,
+				987EA3622B97AA33001D3055 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		988580B52B9659CA0018B6FE /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				988580B62B9659DC0018B6FE /* MainViewController.swift */,
+				987EA3532B97A0F8001D3055 /* MainTabBarController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -463,21 +505,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987EA3632B97AA33001D3055 /* HomeViewController.swift in Sources */,
+				987EA35E2B97A9E8001D3055 /* IdentificationViewController.swift in Sources */,
 				986968E12B8665AD00831E42 /* IntroCell.swift in Sources */,
 				986968DA2B8664B100831E42 /* IntroViewController.swift in Sources */,
+				987EA3542B97A0F8001D3055 /* MainTabBarController.swift in Sources */,
 				986968DF2B86659600831E42 /* IntroCellModel.swift in Sources */,
+				987EA35C2B97A9AC001D3055 /* IdentificationViewModel.swift in Sources */,
 				985DD94D2B8FC3FA00559CE8 /* LoginView.swift in Sources */,
 				987D9F8B2B83D8C8007BE11B /* MainNavigationController.swift in Sources */,
-				988580B72B9659DC0018B6FE /* MainViewController.swift in Sources */,
 				986968E62B866D2700831E42 /* Localizable+Extensions.swift in Sources */,
 				986968E42B8666B600831E42 /* ReusableView.swift in Sources */,
 				987D9F892B83D7E9007BE11B /* BaseViewController.swift in Sources */,
+				987EA3592B97A4A1001D3055 /* ReminderViewModel.swift in Sources */,
 				98D34E612B964DFF00ACCBA6 /* AlertManager.swift in Sources */,
 				987D9F942B83F701007BE11B /* UIImage+Extensions.swift in Sources */,
 				98331EB12B90D449002D430F /* RegisterView.swift in Sources */,
+				987EA3572B97A494001D3055 /* ReminderViewController.swift in Sources */,
 				985DD9482B8FBA7200559CE8 /* RegisterViewModel.swift in Sources */,
 				985DD9512B8FC54B00559CE8 /* LoginViewModel.swift in Sources */,
 				985DD94A2B8FBA8200559CE8 /* RegisterViewController.swift in Sources */,
+				987EA3612B97AA2C001D3055 /* HomeViewModel.swift in Sources */,
 				987D9F872B83D70E007BE11B /* BaseViewModel.swift in Sources */,
 				985DD94F2B8FC53F00559CE8 /* LoginViewController.swift in Sources */,
 				987D9F612B83CACD007BE11B /* AppDelegate.swift in Sources */,
