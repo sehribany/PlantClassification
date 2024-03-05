@@ -51,7 +51,13 @@ extension RegisterViewController{
                     if let error = error {
                         AlertManager.showAlert(title: localizedString("Alert.error"), message: localizedString("Alert.errorTitleR") + ": \(error.localizedDescription)", viewController: viewController)
                     } else {
-                        AlertManager.showAlert(title: localizedString("Alert.success"), message: localizedString("Alert.successTitle"), viewController: viewController)
+                        let alertController = UIAlertController(title: localizedString("Alert.success"), message: localizedString("Alert.successTitle"), preferredStyle: .alert)
+                        let okAction = UIAlertAction(title: "OK", style: .default) { action in
+                            let loginViewController = MainTabBarController()
+                            viewController.navigationController?.pushViewController(loginViewController, animated: true)
+                        }
+                        alertController.addAction(okAction)
+                        viewController.present(alertController, animated: true, completion: nil)                        
                     }
                 }
             }else{
