@@ -9,6 +9,10 @@ import UIKit
 
 class MainNavigationController: UINavigationController {
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureContents()
@@ -23,7 +27,6 @@ class MainNavigationController: UINavigationController {
         navigationBar.barTintColor = .appBlack
         navigationBar.shadowImage  = UIImage()
         navigationBar.tintColor    = .appBlack
-        
         navigationBar.backIndicatorImage               = backImage
         navigationBar.backIndicatorTransitionMaskImage = backImage
         
@@ -37,7 +40,6 @@ class MainNavigationController: UINavigationController {
             navigationBar.scrollEdgeAppearance = appearance
             navigationBar.compactAppearance    = appearance
         }
-        
         navigationBar.backItem?.backBarButtonItem?.setTitlePositionAdjustment(.init(horizontal: 0, vertical: -13), for: .default)
     }
 }
