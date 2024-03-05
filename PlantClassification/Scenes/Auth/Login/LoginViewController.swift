@@ -109,7 +109,7 @@ extension LoginViewController{
                 if let error = error {
                     AlertManager.showAlert(title: localizedString("Alert.error"), message: localizedString("Alert.errorTitleL") + ": \(error.localizedDescription)", viewController: viewController)
                 } else {
-                    self.navigationController?.pushViewController(MainViewController(), animated: true)
+                    self.navigationController?.pushViewController(MainTabBarController(), animated: true)
                 }
             }
         }else{
@@ -137,7 +137,7 @@ extension LoginViewController{
                 if let e = error {
                     AlertManager.showAlert(title: localizedString("Alert.alert"), message: e.localizedDescription, viewController: viewController)
                 } else {
-                    self.navigationController?.pushViewController(MainViewController(), animated: true)
+                    self.navigationController?.pushViewController(MainTabBarController(), animated: true)
                 }
             }
         }
