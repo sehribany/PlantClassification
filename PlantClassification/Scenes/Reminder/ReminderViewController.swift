@@ -14,6 +14,5 @@ class ReminderViewController: BaseViewController<ReminderViewModel> {
         addNavigationBarLogo()
         view.backgroundColor = .appWhite
     }
-    
 
 }

@@ -13,7 +13,16 @@ class HomeViewController: BaseViewController<HomeViewModel> {
         super.viewDidLoad()
         addNavigationBarLogo()
         view.backgroundColor = .appWhite
+        addSettingsButton()
     }
 
+    private func addSettingsButton() {
+        let settingsButton = UIBarButtonItem(image: UIImage(named: "icSetting"), style: .plain, target: self, action: #selector(settingsButtonTapped))
+        navigationItem.rightBarButtonItem = settingsButton
+    }
+
+    @objc private func settingsButtonTapped() {
+        navigationController?.pushViewController(SettingViewController(), animated: true)
+    }
 
 }

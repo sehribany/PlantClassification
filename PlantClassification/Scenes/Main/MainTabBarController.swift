@@ -23,6 +23,10 @@ class MainTabBarController: UITabBarController {
         navController.tabBarItem.image = icon
     }
     
+    private func configureTabBarTitle(navController: MainNavigationController, title: String?){
+        navController.tabBarItem.title = title
+    }
+    
     private func configureContents() {
         tabBar.tintColor = .appGray
     }
@@ -32,6 +36,7 @@ class MainTabBarController: UITabBarController {
         let reminderViewController = ReminderViewController(viewModel: reminderViewModel)
         let navController          = MainNavigationController(rootViewController: reminderViewController)
         configureTabBarIcons(navController: navController, icon: UIImage(named: "icReminder"))
+        configureTabBarTitle(navController: navController, title: "Reminder")
         return navController
     }
     
@@ -40,6 +45,7 @@ class MainTabBarController: UITabBarController {
         let identificationViewController = IdentificationViewController(viewModel: identificationViewModel)
         let navController                = MainNavigationController(rootViewController: identificationViewController)
         configureTabBarIcons(navController: navController, icon: UIImage(named: "icScan"))
+        configureTabBarTitle(navController: navController, title: "Scan")
         return navController
     }
     
@@ -48,6 +54,7 @@ class MainTabBarController: UITabBarController {
         let homeViewController = HomeViewController(viewModel: homeViewModel)
         let navController      = MainNavigationController(rootViewController: homeViewController)
         configureTabBarIcons(navController: navController, icon: UIImage(named: "icHome"))
+        configureTabBarTitle(navController: navController, title: "Home")
         return navController
     }
 }
