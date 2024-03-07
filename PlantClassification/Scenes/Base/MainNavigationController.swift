@@ -24,12 +24,13 @@ class MainNavigationController: UINavigationController {
             .withRenderingMode(.alwaysTemplate)
             .withAlignmentRectInsets(.init(top: 0, left: 0, bottom: -2, right: 0))
         
+        
         navigationBar.barTintColor = .appBlack
         navigationBar.shadowImage  = UIImage()
         navigationBar.tintColor    = .appBlack
         navigationBar.backIndicatorImage               = backImage
         navigationBar.backIndicatorTransitionMaskImage = backImage
-        
+       
         if #available(iOS 13.0, *) {
             let appearance                     = UINavigationBarAppearance()
             appearance.configureWithOpaqueBackground()
@@ -41,5 +42,14 @@ class MainNavigationController: UINavigationController {
             navigationBar.compactAppearance    = appearance
         }
         navigationBar.backItem?.backBarButtonItem?.setTitlePositionAdjustment(.init(horizontal: 0, vertical: -13), for: .default)
+    }
+    
+    private func addSettingsButton() {
+        let settingsButton = UIBarButtonItem(image: UIImage(named: "icSetting"), style: .plain, target: self, action: #selector(settingsButtonTapped))
+        navigationItem.rightBarButtonItem = settingsButton
+    }
+
+    @objc private func settingsButtonTapped() {
+        navigationController?.pushViewController(SettingViewController(), animated: true)
     }
 }

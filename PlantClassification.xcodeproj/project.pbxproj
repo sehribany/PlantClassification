@@ -70,6 +70,7 @@
 		988580F32B965FD70018B6FE /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 988580F22B965FD70018B6FE /* GoogleSignIn */; };
 		988580F52B965FD70018B6FE /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 988580F42B965FD70018B6FE /* GoogleSignInSwift */; };
 		98D34E612B964DFF00ACCBA6 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D34E602B964DFF00ACCBA6 /* AlertManager.swift */; };
+		98D75EAC2B9A133B00BC40AE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D75EAB2B9A133B00BC40AE /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +108,7 @@
 		987EA3622B97AA33001D3055 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		988580B82B965D550018B6FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		98D34E602B964DFF00ACCBA6 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		98D75EAB2B9A133B00BC40AE /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +254,7 @@
 		987D9F752B83CEE0007BE11B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				98D75EAA2B9A132300BC40AE /* Settings */,
 				987D9F852B83D6CD007BE11B /* Base */,
 				987D9F842B83D6C4007BE11B /* Intro */,
 				985DD9402B8FB8B100559CE8 /* Auth */,
@@ -391,6 +394,14 @@
 			path = Alert;
 			sourceTree = "<group>";
 		};
+		98D75EAA2B9A132300BC40AE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				98D75EAB2B9A133B00BC40AE /* SettingViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -508,6 +519,7 @@
 				987EA3632B97AA33001D3055 /* HomeViewController.swift in Sources */,
 				987EA35E2B97A9E8001D3055 /* IdentificationViewController.swift in Sources */,
 				986968E12B8665AD00831E42 /* IntroCell.swift in Sources */,
+				98D75EAC2B9A133B00BC40AE /* SettingViewController.swift in Sources */,
 				986968DA2B8664B100831E42 /* IntroViewController.swift in Sources */,
 				987EA3542B97A0F8001D3055 /* MainTabBarController.swift in Sources */,
 				986968DF2B86659600831E42 /* IntroCellModel.swift in Sources */,
