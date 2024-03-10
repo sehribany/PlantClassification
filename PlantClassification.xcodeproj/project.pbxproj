@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		98331EB12B90D449002D430F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98331EB02B90D449002D430F /* RegisterView.swift */; };
+		9858B4B72B9E28B20040D869 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9858B4B62B9E28B10040D869 /* ProfileView.swift */; };
+		9858B4C12B9E310D0040D869 /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9858B4C02B9E310D0040D869 /* PlantModel.swift */; };
+		9858B4DC2B9E42B40040D869 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9858B4DB2B9E42B40040D869 /* HomeCell.swift */; };
+		9858B4DE2B9E436C0040D869 /* HomeCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9858B4DD2B9E436C0040D869 /* HomeCellModel.swift */; };
+		9858B4E02B9E46E20040D869 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9858B4DF2B9E46E20040D869 /* UIImageView+Extensions.swift */; };
+		9858B4E22B9E51FA0040D869 /* PlantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9858B4E12B9E51FA0040D869 /* PlantManager.swift */; };
+		9858B4E72B9E5AD50040D869 /* Plants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9858B4E62B9E5AD50040D869 /* Plants.swift */; };
 		985DD9482B8FBA7200559CE8 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985DD9472B8FBA7200559CE8 /* RegisterViewModel.swift */; };
 		985DD94A2B8FBA8200559CE8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985DD9492B8FBA8200559CE8 /* RegisterViewController.swift */; };
 		985DD94D2B8FC3FA00559CE8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985DD94C2B8FC3FA00559CE8 /* LoginView.swift */; };
@@ -69,12 +76,34 @@
 		988580F02B965E160018B6FE /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 988580EF2B965E160018B6FE /* FirebaseStorageCombine-Community */; };
 		988580F32B965FD70018B6FE /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 988580F22B965FD70018B6FE /* GoogleSignIn */; };
 		988580F52B965FD70018B6FE /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 988580F42B965FD70018B6FE /* GoogleSignInSwift */; };
+		98AEEE442B9E722000EB746A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 98AEEE432B9E722000EB746A /* Alamofire */; };
+		98AEEE462B9E722000EB746A /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 98AEEE452B9E722000EB746A /* AlamofireDynamic */; };
 		98D34E612B964DFF00ACCBA6 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D34E602B964DFF00ACCBA6 /* AlertManager.swift */; };
 		98D75EAC2B9A133B00BC40AE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D75EAB2B9A133B00BC40AE /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9858B4EB2B9E6E250040D869 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		98331EB02B90D449002D430F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		9858B4B62B9E28B10040D869 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9858B4C02B9E310D0040D869 /* PlantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
+		9858B4DB2B9E42B40040D869 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		9858B4DD2B9E436C0040D869 /* HomeCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellModel.swift; sourceTree = "<group>"; };
+		9858B4DF2B9E46E20040D869 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		9858B4E12B9E51FA0040D869 /* PlantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantManager.swift; sourceTree = "<group>"; };
+		9858B4E62B9E5AD50040D869 /* Plants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plants.swift; sourceTree = "<group>"; };
 		985DD9472B8FBA7200559CE8 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		985DD9492B8FBA8200559CE8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		985DD94C2B8FC3FA00559CE8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -138,9 +167,11 @@
 				988580C42B965E160018B6FE /* FirebaseAppCheck in Frameworks */,
 				988580BE2B965E160018B6FE /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				988580E02B965E160018B6FE /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				98AEEE462B9E722000EB746A /* AlamofireDynamic in Frameworks */,
 				988580EC2B965E160018B6FE /* FirebaseRemoteConfigSwift in Frameworks */,
 				988580F52B965FD70018B6FE /* GoogleSignInSwift in Frameworks */,
 				988580C02B965E160018B6FE /* FirebaseAnalyticsSwift in Frameworks */,
+				98AEEE442B9E722000EB746A /* Alamofire in Frameworks */,
 				988580C62B965E160018B6FE /* FirebaseAppDistribution-Beta in Frameworks */,
 				988580EA2B965E160018B6FE /* FirebaseRemoteConfig in Frameworks */,
 				988580EE2B965E160018B6FE /* FirebaseStorage in Frameworks */,
@@ -159,6 +190,49 @@
 				98331EB02B90D449002D430F /* RegisterView.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		9858B4B52B9E28980040D869 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9858B4B62B9E28B10040D869 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		9858B4B82B9E2D640040D869 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				9858B4B92B9E2D8B0040D869 /* Model */,
+				9858B4CE2B9E33220040D869 /* Manager */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		9858B4B92B9E2D8B0040D869 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9858B4E62B9E5AD50040D869 /* Plants.swift */,
+				9858B4C02B9E310D0040D869 /* PlantModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9858B4CE2B9E33220040D869 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9858B4E12B9E51FA0040D869 /* PlantManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		9858B4DA2B9E3D7F0040D869 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9858B4DB2B9E42B40040D869 /* HomeCell.swift */,
+				9858B4DD2B9E436C0040D869 /* HomeCellModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		985DD9402B8FB8B100559CE8 /* Auth */ = {
@@ -236,6 +310,7 @@
 				987D9F752B83CEE0007BE11B /* Scenes */,
 				98D34E5F2B964DE800ACCBA6 /* Alert */,
 				987D9F762B83CF05007BE11B /* UIComponents */,
+				9858B4B82B9E2D640040D869 /* DataProvider */,
 				987D9F6B2B83CACF007BE11B /* LaunchScreen.storyboard */,
 				987D9F6E2B83CACF007BE11B /* Info.plist */,
 				988580B82B965D550018B6FE /* GoogleService-Info.plist */,
@@ -254,14 +329,14 @@
 		987D9F752B83CEE0007BE11B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				98D75EAA2B9A132300BC40AE /* Settings */,
 				987D9F852B83D6CD007BE11B /* Base */,
 				987D9F842B83D6C4007BE11B /* Intro */,
 				985DD9402B8FB8B100559CE8 /* Auth */,
 				988580B52B9659CA0018B6FE /* Main */,
-				987EA3552B97A472001D3055 /* Reminder */,
-				987EA35A2B97A981001D3055 /* Identification */,
 				987EA35F2B97AA1C001D3055 /* Home */,
+				987EA35A2B97A981001D3055 /* Identification */,
+				987EA3552B97A472001D3055 /* Reminder */,
+				98D75EAA2B9A132300BC40AE /* Settings */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -309,6 +384,7 @@
 		987D9F812B83D651007BE11B /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				9858B4B52B9E28980040D869 /* Profile */,
 				98331EAF2B90D3DE002D430F /* Register */,
 				985DD94B2B8FBF5400559CE8 /* Login */,
 			);
@@ -318,6 +394,7 @@
 		987D9F822B83D65B007BE11B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				9858B4DA2B9E3D7F0040D869 /* Home */,
 				986968DB2B86653100831E42 /* Intro */,
 			);
 			path = Cell;
@@ -328,6 +405,7 @@
 			children = (
 				987D9F932B83F701007BE11B /* UIImage+Extensions.swift */,
 				986968E52B866D2700831E42 /* Localizable+Extensions.swift */,
+				9858B4DF2B9E46E20040D869 /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -412,6 +490,7 @@
 				987D9F592B83CACD007BE11B /* Sources */,
 				987D9F5A2B83CACD007BE11B /* Frameworks */,
 				987D9F5B2B83CACD007BE11B /* Resources */,
+				9858B4EB2B9E6E250040D869 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -450,6 +529,8 @@
 				988580EF2B965E160018B6FE /* FirebaseStorageCombine-Community */,
 				988580F22B965FD70018B6FE /* GoogleSignIn */,
 				988580F42B965FD70018B6FE /* GoogleSignInSwift */,
+				98AEEE432B9E722000EB746A /* Alamofire */,
+				98AEEE452B9E722000EB746A /* AlamofireDynamic */,
 			);
 			productName = PlantClassification;
 			productReference = 987D9F5D2B83CACD007BE11B /* PlantClassification.app */;
@@ -484,6 +565,7 @@
 				987D9F952B83F70F007BE11B /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				988580BA2B965E160018B6FE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				988580F12B965FD70018B6FE /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				9858B4CF2B9E33790040D869 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 987D9F5E2B83CACD007BE11B /* Products */;
 			projectDirPath = "";
@@ -516,9 +598,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9858B4E22B9E51FA0040D869 /* PlantManager.swift in Sources */,
 				987EA3632B97AA33001D3055 /* HomeViewController.swift in Sources */,
+				9858B4B72B9E28B20040D869 /* ProfileView.swift in Sources */,
 				987EA35E2B97A9E8001D3055 /* IdentificationViewController.swift in Sources */,
 				986968E12B8665AD00831E42 /* IntroCell.swift in Sources */,
+				9858B4DC2B9E42B40040D869 /* HomeCell.swift in Sources */,
 				98D75EAC2B9A133B00BC40AE /* SettingViewController.swift in Sources */,
 				986968DA2B8664B100831E42 /* IntroViewController.swift in Sources */,
 				987EA3542B97A0F8001D3055 /* MainTabBarController.swift in Sources */,
@@ -527,8 +612,10 @@
 				985DD94D2B8FC3FA00559CE8 /* LoginView.swift in Sources */,
 				987D9F8B2B83D8C8007BE11B /* MainNavigationController.swift in Sources */,
 				986968E62B866D2700831E42 /* Localizable+Extensions.swift in Sources */,
+				9858B4E02B9E46E20040D869 /* UIImageView+Extensions.swift in Sources */,
 				986968E42B8666B600831E42 /* ReusableView.swift in Sources */,
 				987D9F892B83D7E9007BE11B /* BaseViewController.swift in Sources */,
+				9858B4E72B9E5AD50040D869 /* Plants.swift in Sources */,
 				987EA3592B97A4A1001D3055 /* ReminderViewModel.swift in Sources */,
 				98D34E612B964DFF00ACCBA6 /* AlertManager.swift in Sources */,
 				987D9F942B83F701007BE11B /* UIImage+Extensions.swift in Sources */,
@@ -538,9 +625,11 @@
 				985DD9512B8FC54B00559CE8 /* LoginViewModel.swift in Sources */,
 				985DD94A2B8FBA8200559CE8 /* RegisterViewController.swift in Sources */,
 				987EA3612B97AA2C001D3055 /* HomeViewModel.swift in Sources */,
+				9858B4DE2B9E436C0040D869 /* HomeCellModel.swift in Sources */,
 				987D9F872B83D70E007BE11B /* BaseViewModel.swift in Sources */,
 				985DD94F2B8FC53F00559CE8 /* LoginViewController.swift in Sources */,
 				987D9F612B83CACD007BE11B /* AppDelegate.swift in Sources */,
+				9858B4C12B9E310D0040D869 /* PlantModel.swift in Sources */,
 				986968D82B86649F00831E42 /* IntroViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -595,7 +684,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTABILITY = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -611,11 +700,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -668,7 +757,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -693,7 +782,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -722,7 +811,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -760,6 +849,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9858B4CF2B9E33790040D869 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com//Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
 		987D9F902B83F60F007BE11B /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/roberthein/TinyConstraints.git";
@@ -949,6 +1046,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 988580F12B965FD70018B6FE /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		98AEEE432B9E722000EB746A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9858B4CF2B9E33790040D869 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		98AEEE452B9E722000EB746A /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9858B4CF2B9E33790040D869 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
