@@ -11,7 +11,7 @@ class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBar.tintColor = .appTabBarTitle
+        tabBar.tintColor       = .appTabBarTitle
         tabBar.backgroundColor = .appTabBar
         let reminderViewController       = createReminderViewController()
         let identificationViewController = createIdentificationViewController()

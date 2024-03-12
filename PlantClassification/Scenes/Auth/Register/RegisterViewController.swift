@@ -7,7 +7,7 @@
 
 import UIKit
 import FirebaseAuth
-
+ 
 class RegisterViewController: BaseViewController<RegisterViewModel> {
 
     private let registerView = RegisterView()

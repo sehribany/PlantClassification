@@ -8,13 +8,24 @@
 import UIKit
 
 class SettingViewController: UIViewController {
+    
+    private let profileView = ProfileView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .appWhite
+    }
 
-        view.backgroundColor = .systemRed
+}
+
+//MARK: -UILayout
+extension SettingViewController{
+    
+    private func addSubView(){
+        self.addView()
     }
     
-
-
+    private func addView(){
+        view.addSubview(profileView)
+    }
 }
