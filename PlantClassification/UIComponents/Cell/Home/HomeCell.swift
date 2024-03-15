@@ -12,7 +12,7 @@ public class HomeCell: UICollectionViewCell, ReusableView{
     
     private let imageView: UIImageView = {
         let image         = UIImageView()
-        image.contentMode = .scaleAspectFill
+        image.contentMode = .scaleAspectFit
         return image
     }()
     
@@ -50,6 +50,8 @@ extension HomeCell{
         imageView.leadingToSuperview()
         imageView.trailingToSuperview()
         imageView.topToSuperview()
+        imageView.width(172.5)
+        imageView.height(280)
     }
     
     private func addLabel(){
@@ -64,7 +66,7 @@ extension HomeCell {
     public func set(viewModel: HomeCellProtocol) {
         self.viewModel  = viewModel
         let plant       = viewModel.plant
-        titleLabel.text = plant.commonName
         imageView.setImage(plant.imageURL)
+        titleLabel.text = plant.commonName
     }
 }
