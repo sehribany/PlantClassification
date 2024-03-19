@@ -23,4 +23,9 @@ class BaseViewModel: BaseViewProtocol {
     var showLoading              : (() -> Void)?
     var hideLoading              : (() -> Void)?
     var showWarningToast         : ((String) -> Void)?
+    let dataProvider             : DataProviderProtocol
+    
+    init(dataProvider: DataProviderProtocol = apiDataProvider) {
+        self.dataProvider = dataProvider
+    }
 }
